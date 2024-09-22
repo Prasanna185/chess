@@ -1,0 +1,22 @@
+.offline {
+  width: 100%;
+  min-height: 28px;
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+
+  > svg {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+  }
+}
+
+@at-root html:global(.offline) {
+  .offline {
+    display: flex;
+  }
+}
